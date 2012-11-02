@@ -1,5 +1,9 @@
 /* Custom CSS for your KeyDown presentation here */
 
+h3 {
+  color: #C00 !important;
+}
+
 section.small ul li {
   font-size: .9em !important;
 }

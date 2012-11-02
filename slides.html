@@ -191,7 +191,7 @@
   </div>
   <div class='spacer bottom'></div>
 </section>
-    <section class='left slide small'>
+    <section class='left slide'>
       <div class='spacer top'></div>
       <div class='content'>
         <h3>Popular Frameworks &amp; Tools</h3>
@@ -208,22 +208,374 @@
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Ruby on Rails</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide small'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Benefits</h2>
+        
+        <ul>
+        <li>Model-View-Controller</li>
+        <li>ORM</li>
+        <li>ActiveRecord (DB Abstraction)</li>
+        <li>MySQL, Oracle, PostgreSQL, SQLite3 all work easily</li>
+        <li>Database migrations</li>
+        <li>Performance of SQL via ARel</li>
+        <li>Templates</li>
+        <li>DRY!!!</li>
+        <li>Security</li>
+        <li>Testing</li>
+        <li>Easy Web Server Integration (Apache &amp; Nginx via Passenger, Mongrel, Thin, Unicorn)</li>
+        <li>If you acquire a Rails application you'll know where everything is immediately</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Convention > Configuration</h3>
+        
+        <ul>
+        <li>Do you develop web applications for any reason?</li>
+        <li>We all face common issues:</li>
+        <li>Routing requests</li>
+        <li>Processing forms &amp; loading / display submitted data</li>
+        <li>DB interactions</li>
+        <li>etc.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Convention > Configuration</h3>
+        
+        <ul>
+        <li>Rails groups together best-practices for conventions of handling all these basic problems and wraps them up in an easy to use package. There's a learning curve, but once you get it down it makes developing web applications considerably faster, more stable, and well tested (if you follow best practices).</li>
+        <li>You also benefit from a huge community of support for deployments, development help, tools built on top of Rails, etc.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide small'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Community</h3>
+        
+        <ul>
+        <li>It's what sets Ruby apart from other languages</li>
+        <li>Gems</li>
+        <li>Common Frameworks</li>
+        <li>Unifying for the best solution as a whole</li>
+        <li>User Groups throughout the country<br/>
+        <a href="http://bmoreonrails.org">B'more on Rails</a>, <a href="http://www.meetup.com/dcruby">DCRUG</a>, <a href="http://www.novarug.org/">Nova RUG</a>, <a href="http://frederickridingrails.org">Frederick Riding Rails</a></li>
+        <li>Very active support forums</li>
+        <li>IRC</li>
+        <li>Twitter</li>
+        <li>Conferences!</li>
+        <li>RubyConf: <a href="http://rubyconf.org">http://rubyconf.org</a></li>
+        <li>RailsConf: <a href="http://railsconf.org">http://railsconf.org</a></li>
+        <li>RubyNation: <a href="http://rubynation.org">http://rubynation.org</a></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Which Gems are Commonly Used?</h2>
+        
+        <ul>
+        <li>How do you decide which gems are most popular?</li>
+        <li>Ruby Toolbox: <a href="http://ruby-toolbox.com">http://ruby-toolbox.com</a></li>
+        <li>RubyGems: <a href="http://rubygems.org">http://rubygems.org</a></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide small'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Gems Worth Knowing</h2>
+        
+        <ul>
+        <li>Bundler</li>
+        <li>RVM</li>
+        <li>Devise / OmniAuth</li>
+        <li>CanCan</li>
+        <li>factory_girl</li>
+        <li>cucumber / cucumber-rails</li>
+        <li>rspec / shoulda</li>
+        <li>formtastic</li>
+        <li>will_paginate</li>
+        <li>json</li>
+        <li>datamapper</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Rubyists &lt;3 Best Practices</h2>
+        
+        <ul>
+        <li>Agile development methodology</li>
+        <li>Testing! BDD / TDD</li>
+        <li>Bundler for gem management</li>
+        <li>RVM for development environment</li>
+        <li>RVM can be used for production as well (WE DO!)</li>
+        <li>Capistrano for deployments (generally)</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='center slide small'>
   <div class='spacer top'></div>
   <div class='content'>
-    <h1>Some sample code</h1>
+    <h3>Agile Manifesto</h3>
 
-<p><textarea class='code' display='none' mode='ruby'>def method&#x000A;  puts "Hello, World"&#x000A;end</textarea>
+<p>We are uncovering better ways of developing<br/>
+software by doing it and helping others do it.<br/>
+Through this work we have come to value:</p>
+
+<ul>
+<li><span class="agile_left">Individuals and interactions</span> over <span class="agile_right">processes and tools</span></li>
+<li><span class="agile_left">Working software</span> over <span class="agile_right">comprehensive documentation</span></li>
+<li><span class="agile_left">Customer collaboration</span> over <span class="agile_right">contract negotiation</span></li>
+<li><span class="agile_left">Responding to change</span> over <span class="agile_right">following a plan</span></li>
+</ul>
+
+
+<p>That is, while there is value in the items on<br/>
+the right, we value the items on the left more.</p>
+
+<p><a href="http://agilemanifesto.org/">http://agilemanifesto.org</a></p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Testing</h2>
+        
+        <ul>
+        <li>Cucumber for integration tests</li>
+        <li>Works with non-Ruby languages via built-in browser</li>
+        <li>RSpec / Shoulda for unit &amp; acceptance tests</li>
+        <li>Test::Unit / minitest are valid &amp; built-in</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Sample Cucumber Feature</h3>
+
+<pre><code>Given I am on the home page
+And I login as "rubyist@email.com"
+Then I should see "Welcome, Rubyist"
+</code></pre>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>RVM</h2>
+        
+        <ul>
+        <li>Simple development environment</li>
+        <li>Allows you to easily install multiple Rubies in your home folder</li>
+        <li>Gives you gemsets to isolate gems by projects</li>
+        <li>Avoids headaches, conflicts, and solves world hunger</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>RVM is EASY</h2>
+    
+    <p><textarea class='code' display='none' mode='sh'>$ gem install rvm&#x000A;$ rvm-install # installs RVM command&#x000A;$ rvm install 1.8.7&#x000A;$ rvm install 1.9.2&#x000A;$ rvm install ree&#x000A;$ rvm install jruby&#x000A;$ rvm install macruby&#x000A;$ rvm use 1.9.2&#x000A;$ rvm gemset create bah&#x000A;$ rvm gemset use bah&#x000A;$ gem install 'bundler'</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
 </section>
-    <section class='full-background slide test'>
+    <section class='left slide small'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Bundler</h2>
+
+<ul>
+<li>Bundler organizes gems per project</li>
+<li>Handles dependencies</li>
+<li>Identifies best gem version to use amongst all gems</li>
+<li>Allows for certain gems per environment (development, test, production, etc)</li>
+<li>Packages gem locally for deploy install if no gemserver is available:</li>
+<li><pre class="sh_sh sh_sourceCode"><code>$ bundle package</code></pre></li>
+</ul>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Bundler is EASY</h2>
+    
+    <p><textarea class='code' display='none' mode='sh'>$ gem install bundler&#x000A;$ touch Gemfile&#x000A;# Create your Gemfile&#x000A;$ bundle install&#x000A;$ bundle exec (rails|cap|showoff|etc)</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>With a Background Image</h1>
+        <h3>Capistrano for Deployments:</h3>
+        
+        <ul>
+        <li>One primary config file to deploy to multiple servers</li>
+        <li>One specific file per environment for unique settings</li>
+        <li>Symlinks all config files on the serve from a shared folder to the current deploy folder</li>
+        </ul>
       </div>
       <div class='spacer bottom'></div>
     </section>
+    <section class='left slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>config/deploy.rb :: Config</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'>#bundler and multi-stage recipe hooks&#x000A;#require 'bundler/capistrano' # still broken in 1.0.7?&#x000A;set :stages, %w(dev staging prod)&#x000A;require 'capistrano/ext/multistage'&#x000A;set :default_stage, "dev"&#x000A;&#x000A;# global defaults&#x000A;set :application, "domain.com"&#x000A;&#x000A;# Git config&#x000A;set :scm, :git&#x000A;set :repository,  "git@github.com:stevenhaddox/domain.com.git"&#x000A;set :branch, "master"&#x000A;&#x000A;# SSH config&#x000A;ssh_options[:forward_agent] = true&#x000A;set :use_sudo, false&#x000A;set :user, "steven"</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide small'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>config/deploy.rb :: Tasks</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'># test task&#x000A;task :uname do&#x000A;  run "uname -a"&#x000A;end&#x000A;&#x000A;namespace :symlinks do&#x000A;  desc "Create shared symlinks"&#x000A;  task :db, :roles => :app do&#x000A;    run "ln -nfs #{shared_path}/system/database.yml #{release_path}/config/database.yml"&#x000A;  end&#x000A;  task :log, :roles => :app do&#x000A;    run "ln -nfs #{shared_path}/log #{release_path}/log"&#x000A;  end&#x000A;end&#x000A;&#x000A;desc "Install bundled gems into shared/bundle"&#x000A;task :bundle do&#x000A;  run "ln -nfs #{shared_path}/bundle #{release_path}/vendor/bundle"&#x000A;  run "cd #{release_path}; bundle install --deployment"&#x000A;end&#x000A;&#x000A;namespace :deploy do&#x000A;  task :start do ; end&#x000A;  task :stop do ; end&#x000A;  task :restart, :roles => :app, :except => { :no_release => true } do&#x000A;    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"&#x000A;  end&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>conig/deploy.rb :: Callbacks</h3>
+    
+    <p><textarea class='code' display='none' mode='ruby'># callbacks&#x000A;after 'deploy:update_code', 'symlinks:db'       # update db symlink&#x000A;after 'deploy:update_code', 'symlinks:log'      # update log symlink&#x000A;after 'deploy:update_code', 'bundle'            # install bundler gems for Passenger&#x000A;after 'deploy', 'deploy:cleanup'                # keep only last 5 deployed versions&#x000A;after 'deploy:migrations', 'deploy:cleanup'     # keep only last 5 deployed versions</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Questions?</h1>
+        
+        <h2>Seriously, ask anything...</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide small'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Resources to Learn Ruby/Rails</h3>
+
+<h3>Screencasts / Digital</h3>
+
+<ul>
+<li><a href="http://tryruby.org/">TryRuby</a>: http://tryruby.org</li>
+<li><a href="http://peepcode.com">Peepcode</a>: http://peepcode.com</li>
+<li><a href="http://ruby.railstutorial.org/">Rails Tutorial</a>: http://ruby.railstutorial.org</li>
+<li><a href="https://pragmaticstudio.com/ruby/">Pragmatic Studio: Learn Ruby</a>: https://pragmaticstudio.com/ruby</li>
+<li><a href="http://guides.rubyonrails.org">Rails Guides</a>: http://guides.rubyonrails.org</li>
+<li><a href="http://rubylearning.com">Ruby Learning</a>: http://rubylearning.com</li>
+<li><a href="http://www.ruby-lang.org/en/documentation/quickstart/">Ruby in 20 Minutes</a>:<br/>
+http://www.ruby-lang.org/en/documentation/quickstart/</li>
+<li><a href="http://ruby-lang.org">Ruby</a>: http://ruby-lang.org</li>
+<li><a href="http://rubyonrails.org">Ruby on Rails</a>: http://rubyonrails.org</li>
+<li><a href="http://rvm.beginrescueend.com">RVM</a>: http://rvm.beginrescueend.com</li>
+<li><a href="http://gembundler.com">Bundler</a>: http://gembundler.com</li>
+<li><a href="http://railsinstaller.org/">RailsInstaller</a>: http://railsinstaller.org</li>
+<li><a href="http://rubygems.org">RubyGems</a>: http://rubygems.org</li>
+<li><a href="http://ruby-toolbox.com">RubyToolbox</a>: http://ruby-toolbox.com</li>
+</ul>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide small'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Resources to Learn Ruby/Rails</h3>
+        
+        <h3>Books</h3>
+        
+        <ul>
+        <li>Pragmatic Programmer's == win!</li>
+        <li>Programming Ruby (aka "the Pickaxe book") by Dave Thomas (for Ruby 1.9.2)</li>
+        <li>Agile Web Development with Rails (4th ed)</li>
+        <li>The RSpec Book (BDD &amp; TDD using Cucumber and RSpec) &lt;-- useful for any language!</li>
+        <li>Ruby Best Practices by Gregory Brown</li>
+        <li>The Pragmatic Programmer</li>
+        <li>Practices of an Agile Developer</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide small'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Technologies used for this presentation</h3>
+
+<ul>
+<li><a href="https://github.com/infews/keydown" title="Keydown gem">Keydown Gem</a>:<br/>
+https://github.com/infews/keydown</li>
+<li><a href="http://www.sinatrarb.com/" title="Sinatra">Sinatra</a>:<br/>
+http://www.sinatrarb.com/</li>
+<li><a href="http://daringfireball.net/projects/markdown" title="Markdown by John Gruber">Markown Syntax</a>:<br/>
+http://daringfireball.net/projects/markdown</li>
+<li><a href="http://gembundler.com">Bundler</a>:<br/>
+http://gembundler.com</li>
+</ul>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide small'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>Sources used for presentation</h3>
+
+<ul>
+<li><a href="http://www.scholarslab.org/slab-code/why-ruby/" title="Why Ruby?">Why Ruby?</a>:<br/>
+http://www.scholarslab.org/slab-code/why-ruby/</li>
+<li><a href="http://www.slideshare.net/Belighted/ruby-vs-java" title="Java vs Ruby">Java vs Ruby: a quick and fair comparison</a>*:<br/>
+http://www.slideshare.net/Belighted/ruby-vs-java</li>
+<li><a href="http://www.dmh2000.com/cjpr/">C++ vs Java vs Python vs Ruby</a>*:<br/>
+http://www.dmh2000.com/cjpr/</li>
+<li><a href="http://agilemanifesto.org/">Agile Manifesto</a>:<br/>
+http://agilemanifesto.org/</li>
+<li><a href="http://www.engineyard.com/blog/2010/architecture-wins-varnish-and-more/">Ruby Scales, AND It's Fast</a>:<br/>
+http://www.engineyard.com/blog/2010/architecture-wins-varnish-and-more/</li>
+</ul>
+
+
+<p>* Denotes a technical presentation from 2006, take with a grain of salt for all comparisons</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <!-- deck.js navigation extension -->
     <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
     <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
